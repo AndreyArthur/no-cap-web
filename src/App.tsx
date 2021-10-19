@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { NewPage } from '@/pages';
+import { Router } from '@/routes';
 
 import '@/styles/globals.css';
 
-export const App = (): JSX.Element => <NewPage />;
+export const App = (): JSX.Element => <Router />;
