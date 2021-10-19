@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignorePattern": "<(.*)/?>;?$",
+        "ignoreStrings": true
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/extensions": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "class-methods-use-this": "off",
+    "react/require-default-props": "off",
+    "consistent-return": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
+}
