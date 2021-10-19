@@ -1,3 +1,7 @@
 import React from 'react';
 
-export const App = (): JSX.Element => <h1>Hello, World!</h1>;
+import { NewPage } from '@/pages';
+
+import '@/styles/globals.css';
+
+export const App = (): JSX.Element => <NewPage />;
