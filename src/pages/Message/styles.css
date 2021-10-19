@@ -1,0 +1,27 @@
+.page-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 0 2rem 1rem 2rem;
+}
+
+.page-message a {
+  display: block;
+}
+
+.page-message a button {
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: 0;
+
+  background-color: var(--background-secondary);
+}
+
+.page-message h1,
+.page-message h3 {
+  text-align:  center;
+}
