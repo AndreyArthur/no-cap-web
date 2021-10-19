@@ -1,0 +1,56 @@
+.component-toast {
+  width: 90%;
+  max-width: 70rem;
+
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+
+  border-radius: 2rem 2rem 0 0;
+  padding: 3rem;
+
+  background-color: var(--background-secondary);
+}
+
+.component-toast.show {
+  animation: 400ms show-toast ease both;
+}
+
+@keyframes show-toast {
+  from {
+    bottom: -10%;
+    opacity: 0;
+  } to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.component-toast.hide {
+  animation: 400ms hide-toast ease both;
+}
+
+@keyframes hide-toast {
+  from {
+    bottom: 0;
+    opacity: 1;
+  } to {
+    bottom: -10%;
+    opacity: 0;
+  }
+}
+
+.component-toast.success {
+  color: var(--success);
+}
+
+.component-toast.failure {
+  color: var(--danger);
+}
+
+@media (max-width: 500px) {
+  .component-toast {
+    width: 95%;
+  }
+}

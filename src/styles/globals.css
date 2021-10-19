@@ -4,6 +4,9 @@
   --text: #dddddd;
   --text-secondary: #111111;
   --background: #222222;
+  --background-secondary: #ffffff;
+  --danger: #ff3333;
+  --success: #33ff33;
 }
 
 * {
